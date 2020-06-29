@@ -15,13 +15,13 @@ public class CaptchaManager {
     }
 
     public void add(UUID uuid) {
-        if(!this.captchaPlayers.contains(uuid))  {
+        if(!contains(uuid))  {
             this.captchaPlayers.add(uuid);
         }
     }
 
     public void remove(UUID uuid) {
-        if(this.captchaPlayers.contains(uuid)) {
+        if(contains(uuid)) {
            this.captchaPlayers.remove(uuid);
         }
     }

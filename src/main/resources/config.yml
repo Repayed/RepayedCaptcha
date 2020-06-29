@@ -17,7 +17,7 @@ options:
   messages:
     bypassed_captcha: "&b&l[!] &bYou have bypassed the captcha due to having sufficient permissions."
     captcha_successful: "&a&l[!] &aYour captcha verification has been successful. Enjoy your stay!"
-    kick_message: ""
+    kick_message: "&3&lCAPTCHA VERIFICATION \n \n &7You have failed to solve the captcha. \n &7If you'd like to play again, please log back into the server. \n \n &bIf you think this is an error. Please contact the staff team at our discord."
   sounds:
     captcha_successful:
       sound: SUCCESSFUL HIT

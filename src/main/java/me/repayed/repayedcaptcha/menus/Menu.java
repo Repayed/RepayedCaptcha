@@ -1,7 +1,6 @@
 package me.repayed.repayedcaptcha.menus;
 
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
 public abstract class Menu {
@@ -11,17 +10,9 @@ public abstract class Menu {
     public Menu(String menuTitle, int rows) {
         this.inventory = Bukkit.createInventory(null, (rows * ROW_SIZE), menuTitle);
     }
-
-    public String getMenuTitle() {
-        return this.inventory.getTitle();
-    }
-
     protected Inventory getInventory() {
         return this.inventory;
     }
 
-    public void openMenu(Player player) {
-        player.openInventory(this.inventory);
-    }
 
 }

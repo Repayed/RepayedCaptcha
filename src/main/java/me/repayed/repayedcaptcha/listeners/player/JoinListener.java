@@ -25,7 +25,7 @@ public class JoinListener implements Listener {
             Bukkit.getScheduler().runTaskLater(RepayedCaptcha.getInstance(), new Runnable() {
 
                 public void run() {
-                    CaptchaMenu menu = new CaptchaMenu(player, new ItemBuilder(Material.EYE_OF_ENDER, "&aVerification Item")
+                    new CaptchaMenu(player, new ItemBuilder(Material.EYE_OF_ENDER, "&aVerification Item")
                             .withEnchantment()
                             .withLore(
                                     "&7You must click this item to access the server.",

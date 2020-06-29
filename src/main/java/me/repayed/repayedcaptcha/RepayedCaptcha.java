@@ -7,6 +7,7 @@ import me.repayed.repayedcaptcha.listeners.player.PlayerDropItemListener;
 import me.repayed.repayedcaptcha.listeners.player.PlayerInventoryDragListener;
 import me.repayed.repayedcaptcha.listeners.player.PlayerItemHeldListener;
 import me.repayed.repayedcaptcha.manager.CaptchaManager;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RepayedCaptcha extends JavaPlugin {
@@ -28,11 +29,12 @@ public class RepayedCaptcha extends JavaPlugin {
     public CaptchaManager getCaptchaManager() { return this.captchaManager; }
 
     private void registerListeners() {
-        getServer().getPluginManager().registerEvents(new JoinListener(), this);
-        getServer().getPluginManager().registerEvents(new ClickMenuItemListener(), this);
-        getServer().getPluginManager().registerEvents(new MenuCloseListener(), this);
-        getServer().getPluginManager().registerEvents(new PlayerDropItemListener(), this);
-        getServer().getPluginManager().registerEvents(new PlayerItemHeldListener(), this);
-        getServer().getPluginManager().registerEvents(new PlayerInventoryDragListener(), this);
+        final PluginManager pluginManager = getServer().getPluginManager();
+        pluginManager.registerEvents(new JoinListener(), this);
+        pluginManager.registerEvents(new ClickMenuItemListener(), this);
+        pluginManager.registerEvents(new MenuCloseListener(), this);
+        pluginManager.registerEvents(new PlayerDropItemListener(), this);
+        pluginManager.registerEvents(new PlayerItemHeldListener(), this);
+        pluginManager.registerEvents(new PlayerInventoryDragListener(), this);
     }
 }

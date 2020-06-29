@@ -18,7 +18,7 @@ public class CaptchaMenu extends Menu {
         player.openInventory(this.getInventory());
     }
 
-    public ItemStack getCaptchaItem() {
+    private ItemStack getCaptchaItem() {
         return this.captchaItem;
     }
 
