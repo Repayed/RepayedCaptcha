@@ -1,0 +1,29 @@
+options:
+  permissions:
+    captcha_bypass: "Captcha.bypass"
+  menu:
+    title: "Captcha - Click the item"
+    rows: 3
+  items:
+    verification_item:
+      name: "&aVerification Item"
+      material: EYE_OF_ENDER
+      enchanted: true
+      lore:
+        - ""
+        - "&7You must click this item to access the server."
+        - ""
+        - "&cIf you click anything else, you will be &4kicked&c."
+  messages:
+    bypassed_captcha: "&b&l[!] &bYou have bypassed the captcha due to having sufficient permissions."
+    captcha_successful: "&a&l[!] &aYour captcha verification has been successful. Enjoy your stay!"
+    kick_message: ""
+  sounds:
+    captcha_successful:
+      sound: SUCCESSFUL HIT
+        volume: 1.0
+        pitch: 1.0
+
+
+
+
